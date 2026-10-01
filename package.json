@@ -1,0 +1,34 @@
+{
+  "name": "@dorkfi/xchain-sponsor",
+  "version": "0.1.0",
+  "description": "Sponsor gas for an EVM wallet and the Algorand xChain account derived from it.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./server": "./src/server/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@algorandfoundation/algokit-utils": "^9.1.2",
+    "algo-x-evm-sdk": "^0.1.2",
+    "algosdk": "^3.5.2",
+    "viem": "^2.48.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "typescript": "^5.5.3",
+    "vitest": "^3.2.4"
+  }
+}
